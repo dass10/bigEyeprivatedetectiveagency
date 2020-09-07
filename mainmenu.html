@@ -2,22 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Main Menu</title>
 
     <style type="text/css">
-        div.polaroid {
-            width: 350px;
+        body{
+            background-color: lemonchiffon;
+        }
+        div {
+            width: 140px;
+
             background-color: darkolivegreen;
             font-family: "Bookman Old Style";
             text-align: center;
-            font-size: large;
+            font-size: smaller;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             margin: 40px;
             padding: 30px;
             border-radius: 30px;
             display: inline-block;
         }
+        input {
+            font-family: "Bookman Old Style";
+            font-size: large;
+            border-radius: 10px;
+            width: 40%;
+            height: 60%;
+            background-color: lemonchiffon;
+            text-decoration-color: black;
+
+        }
+
+            #exitbut{
+            width: 100%;
+            text-align: center;
+            background-color: saddlebrown;
+        }
     </style>
+
+    <script language="javascript" type="text/javascript">
+        function windowClose () {
+            window.open('','_parent','');
+            window.close();
+        }
+    </script>
 </head>
 <body>
 
@@ -175,7 +202,15 @@
 
                 </p>
             </div>
-        </div>
+
+        </div><br><br>
+
+
+<div id="exitbut"><input  type="button" value="Exit" onclick="windowClose();"></div>
+
+
+
+
 
 
 
